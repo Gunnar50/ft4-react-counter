@@ -11,8 +11,8 @@ export default class Nav extends Component {
 	render() {
 		return (
 			<ul>
-				{navLinks.map((e) => (
-					<Link name={e.name} link={e.link} />
+				{navLinks.map((e, i) => (
+					<Link key={i} name={e.name} link={e.link} />
 				))}
 			</ul>
 		);
